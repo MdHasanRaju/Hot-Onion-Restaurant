@@ -3,7 +3,7 @@ import BreakfastItem from '../BreakfastItem/BreakfastItem';
 
 const BreakfastItems = () => {
     const [breakfasts, setBreakfasts] = useState([]);
-
+    
     useEffect(() => {
         fetch('./breakfastData.json')
         .then(res => res.json())
@@ -12,7 +12,7 @@ const BreakfastItems = () => {
 
     return (
         <div>
-            <h2>Breakfast Items: {breakfasts.length}</h2>
+            <h2 className="text-center">Breakfast Items: {breakfasts.length}</h2>
             <div className="row container mx-auto g-4">
                 {
                     breakfasts.map(breakfast => <BreakfastItem

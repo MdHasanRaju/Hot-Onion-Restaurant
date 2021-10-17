@@ -6,16 +6,16 @@ const Banner = () => {
       <div className="banner text-center d-flex justify-content-center align-items-center">
         <div>
           <h1>Best Food Waiting For Your Belly</h1>
-          <div className="input-group w-50 mb-3 mx-auto">
+          <div className="input-group w-75 mb-3 mx-auto">
             <input
               type="text"
-              className="form-control"
+              className="form-control rounded-pill"
               placeholder="Search Food Items"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
             />
-            <button
-              className="input-group-text btn btn-danger"
+            <button style={{marginLeft:"-35px"}}
+              className="input-group-text btn btn-danger rounded-pill w-25"
               id="basic-addon2"
             >
               Search

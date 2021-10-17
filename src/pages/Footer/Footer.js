@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="row g-3 mt-3">
             <div className="col-lg-6 text-start">
               <p>
-                Copy Right <span className="text-danger fw-bolder ">Online Food</span>
+                Copy Right © <span className="text-danger fw-bolder ">Online Food</span>
               </p>
             </div>
             <div className="col-lg-6">

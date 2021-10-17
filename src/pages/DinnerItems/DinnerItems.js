@@ -12,7 +12,7 @@ const DinnerItems = () => {
 
     return (
       <div>
-        <h2>Dinner Items: {dinners.length}</h2>
+        <h2 className="text-center">Dinner Items: {dinners.length}</h2>
         <div className="row container mx-auto g-4">
           {dinners.map((dinner) => (
             <DinnerItem
@@ -20,6 +20,7 @@ const DinnerItems = () => {
               dinner={dinner}
             ></DinnerItem>
           ))}
+          {}
         </div>
       </div>
     );

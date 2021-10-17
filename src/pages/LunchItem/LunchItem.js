@@ -1,9 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 import './LunchItem.css';
 
 const LunchItem = ({lunch}) => {
     const {name, img, price, id} = lunch;
-    console.log(lunch);
+    const history = useHistory();
+
+    // const handleId = id => {
+    //   history.push(`/lunchdetails/${id}`);
+    // }
 
     return (
       <div className="col-lg-4 ">
@@ -14,6 +20,7 @@ const LunchItem = ({lunch}) => {
           <div className="card-body">
             <h5 className="card-title">{name}</h5>
             <p className="card-text">${price}</p>
+            <Link to={`/lunchdetails/${id}`}>see details</Link>
           </div>
         </div>
       </div>
